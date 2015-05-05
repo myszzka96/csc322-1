@@ -1,0 +1,13 @@
+Create a directory called IveGotRights off LabTask2. Set its permissions to:
+mkdir $HOME/LabTask2/IveGotRights
+
+Read, write, and execute permission for the owner (0.15%)
+chmod 700 $HOME/LabTask2/IveGotRights/
+
+Read and execute permission for the group (0.15%)
+chmod 750 $HOME/LabTask2/IveGotRights/
+
+Execute permission for others (0.15%)
+chmod 751 $HOME/LabTask2/IveGotRights/
+
+Put the commands that you used to do these into a file named Permissions.

@@ -1,0 +1,24 @@
+Making files and directories
+Make a directory called LabTask2 off your home directory (0.05%).
+mkdir $HOME/LabTask2
+
+Off LabTask2, a subdirectory called Originals (0.05%).
+mkdir $HOME/LabTask2/Originals
+
+In Originals two files, HardStuff and SoftStuff (put any garbage in them) (0.05%).
+touch $HOME/LabTask2/Originals/HardStuff
+touch $HOME/LabTask2/Originals/SoftStuff
+
+Off LabTask2, a subdirectory called Links (0.05%).
+mkdir $HOME/LabTask2/Links
+
+In Links
+A hard link named LinkToHardStuff that links to HardStuff in Originals (0.15%).
+ln ~/LabTask2/Originals/HardStuff ~/LabTask2/Links/LinkToHardStuff
+
+A relative soft (symbolic link) link named RelativeToSoftStuff to SoftStuff in Originals(0.15%).
+ln -s ~/LabTask2/Originals/SoftStuff ~/LabTask2/Links/RelativeToSoftStuff
+
+Put the commands that you used to do these (including making the directories and files) into a file named MakingLinks.
+See up ^
+

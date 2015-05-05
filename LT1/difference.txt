@@ -1,0 +1,9 @@
+wc `grep -l int *`: Runs the command "wc" on the output of "grep -l int *" which means that it will runs "wc" on each individual file found by the "grep" command. 
+Output: 
+[gdup322@gettysburg ~]$ wc `grep -l int *`
+ 3  5 20 exampleint
+
+grep -l int * | wc: Passes the result of the grep command to wc, so counting the results of it instead of counting inside the files.
+Output:
+[gdup322@gettysburg ~]$ grep -l int * | wc
+      1       1      11

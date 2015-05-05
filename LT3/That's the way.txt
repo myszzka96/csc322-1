@@ -1,0 +1,39 @@
+Create a an empty file called That's the way.txt containing commands to do the
+following (not a script, just a file for the TA to grade)(0.25%):
+touch "That's the way.txt"
+
+A sequence command to copy Ticker.c to the current directory then compile it
+with all warnings and output the executable to Ticker. (You may wish to fix
+Ticker.c so that there are no warnings. (0.25%)
+wget http://cs.miami.edu/~wuchtys/CSC322-15S/Content/UNIXUse/MyCode/Ticker.c
+gcc -Wall Ticker.c -o Ticker
+
+A series of commands that (0.5%)
+In one go, start Ticker 5 in the background and Ticker 7 in the foreground.
+./Ticker 5 & >/dev/null && ./Ticker 7
+
+Suspend Ticker 7
+^Z
+
+List the jobs
+jobs
+
+Activate Ticker 7 in the background
+bg %2 (assuming Ticker 5 and Ticker 7 are only bg jobs)
+
+Bring Ticker 5 into the foreground
+fg %1
+
+Suspend Ticker 5
+^Z
+
+Kill Ticker 5
+kill %1
+
+Kill Ticker 7
+kill %2
+
+A pipeline command including grep, that will extract lines containing legal
+int definitions in Java of GrepExInts and will count the number of lines.
+(0.5%)
+grep -E "^[ ]*\bint\b[ ]*[a-z][a-zA-Z0-9, ]*;" GrepExInts | wc -l

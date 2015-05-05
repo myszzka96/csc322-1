@@ -1,0 +1,13 @@
+Find the following files and directories:
+
+The file where your email addressed to your class account would be stored (if Irina let you receive email in your class account) (0.15%).
+/var/spool/mail/gdup322
+
+The file that contains the configuration for printers available to the computer (0.2%).
+/etc/cups/printers.conf
+
+The directory that contains libraries for security using the Pluggable Authentication Module (0.2%).
+/lib64/security/
+
+Put the full path names in a file called Eureka.
+^^^^

@@ -1,0 +1,2 @@
+[gdup322@gettysburg ~]$ ls -A | wc -w
+10
